@@ -1,16 +1,40 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navbar from "@/components/site/Navbar";
+import Hero from "@/components/site/Hero";
+import Benefits from "@/components/site/Benefits";
+import Lifestyle from "@/components/site/Lifestyle";
+import Package from "@/components/site/Package";
+import Testimonials from "@/components/site/Testimonials";
+import FAQ from "@/components/site/FAQ";
+import CTA from "@/components/site/CTA";
+import Footer from "@/components/site/Footer";
+import { useEffect } from "react";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+const Index = () => {
+  useEffect(() => {
+    document.title = "OuraEyes — SiaaSoo Smart Eye Massager";
+    const desc = "Melt away eye strain and sleep deeper with SiaaSoo — the smart eye massager from OuraEyes. Heat, vibration & sound therapy in one elegant device.";
+    let meta = document.querySelector('meta[name="description"]');
+    if (!meta) {
+      meta = document.createElement("meta");
+      meta.setAttribute("name", "description");
+      document.head.appendChild(meta);
+    }
+    meta.setAttribute("content", desc);
+  }, []);
+
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
-    </div>
+    <main className="min-h-screen">
+      <Navbar />
+      <Hero />
+      <Benefits />
+      <Lifestyle />
+      <Package />
+      <Testimonials />
+      <FAQ />
+      <CTA />
+      <Footer />
+    </main>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;
