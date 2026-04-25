@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Star } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroProduct from "@/assets/hero-product.png";
 
 const Hero = () => {
@@ -20,11 +21,15 @@ const Hero = () => {
             Meet <strong className="text-foreground font-medium">SiaaSoo</strong> — the smart eye massager that melts away tension, soothes tired eyes, and helps you drift into deeper sleep with heat, vibration & sound therapy.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Button variant="hero" size="xl">
-              Order Now — €149
-              <ArrowRight className="h-5 w-5" />
-            </Button>
-            <Button variant="soft" size="xl">Watch Demo</Button>
+            <Link to="/checkout">
+              <Button variant="hero" size="xl">
+                Order Now — €299.99
+                <ArrowRight className="h-5 w-5" />
+              </Button>
+            </Link>
+            <a href="#benefits">
+              <Button variant="soft" size="xl">Learn more</Button>
+            </a>
           </div>
           <div className="flex items-center gap-6 pt-4 text-sm text-muted-foreground">
             <div className="flex items-center gap-1.5">

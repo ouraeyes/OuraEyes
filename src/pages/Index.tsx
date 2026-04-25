@@ -11,8 +11,8 @@ import { useEffect } from "react";
 
 const Index = () => {
   useEffect(() => {
-    document.title = "OuraEyes — SiaaSoo Smart Eye Massager";
-    const desc = "Melt away eye strain and sleep deeper with SiaaSoo — the smart eye massager from OuraEyes. Heat, vibration & sound therapy in one elegant device.";
+    document.title = "OuraEyes SiaaSoo — Smart Eye Massager for Headache Relief & Better Sleep";
+    const desc = "OuraEyes SiaaSoo: smart eye massager for headache relief, anti-stress, better sleep, and smoothing fine lines. Heat, vibration & sound therapy. €299.99 in EUR.";
     let meta = document.querySelector('meta[name="description"]');
     if (!meta) {
       meta = document.createElement("meta");

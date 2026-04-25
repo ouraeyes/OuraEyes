@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Eye } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -17,7 +18,7 @@ const Navbar = () => {
           <a href="#package" className="hover:text-foreground transition-smooth">What's Inside</a>
           <a href="#faq" className="hover:text-foreground transition-smooth">FAQ</a>
         </nav>
-        <Button variant="sage" size="sm">Shop SiaaSoo</Button>
+        <Link to="/checkout"><Button variant="sage" size="sm">Shop SiaaSoo</Button></Link>
       </div>
     </header>
   );
