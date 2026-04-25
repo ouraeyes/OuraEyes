@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const CTA = () => {
   return (
@@ -15,10 +16,12 @@ const CTA = () => {
               Join thousands who've made SiaaSoo part of their daily wellness ritual.
             </p>
             <div className="flex flex-wrap gap-4 justify-center pt-2">
-              <Button size="xl" className="bg-background text-primary-deep hover:bg-background/90 rounded-full shadow-elegant">
-                Order SiaaSoo — €149
-                <ArrowRight className="h-5 w-5" />
-              </Button>
+              <Link to="/checkout">
+                <Button size="xl" className="bg-background text-primary-deep hover:bg-background/90 rounded-full shadow-elegant">
+                  Order SiaaSoo — €299.99
+                  <ArrowRight className="h-5 w-5" />
+                </Button>
+              </Link>
             </div>
             <p className="text-sm opacity-75">Free shipping · 60-night trial · 2-year warranty</p>
           </div>
