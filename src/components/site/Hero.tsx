@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Star } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroProduct from "@/assets/hero-product.png";
 
 const Hero = () => {
